@@ -1,0 +1,5 @@
+Options FollowSymLinks
+RewriteEngine on
+RewriteBase /siksdroid/
+RewriteCond $1 !^(index\.php|download|addons|assets|themes|cron|(.*).js|robots\.txt)
+RewriteRule ^(.*)$ index.php/?$1 [L]
